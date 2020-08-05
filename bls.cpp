@@ -56,6 +56,7 @@ int main()
 	time(&seed);
     irand((long)seed);
 
+
 // Create system-wide G2 constant
 	pfc.random(Q);
 
