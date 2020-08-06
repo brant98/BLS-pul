@@ -4,7 +4,7 @@
 #define MR_PAIRING_BLS    // AES-256 security    定义BLS曲线
 #define AES_SECURITY 256
 #include "include/pairing_3.h"
-int main()
+int test_bls()
 {   
 	PFC pfc(AES_SECURITY);  // 初始化双线性对曲线
 	G1 S,R;
@@ -15,8 +15,9 @@ int main()
 	const char* message = "Be there or be square!";  //待签名消息m
 	time(&seed);
     irand((long)seed);
-
-// Create system-wide G2 constant
+	
+	
+// 创建G2常量
 	pfc.random(Q);
 
 	pfc.random(s);    // 私钥
@@ -55,5 +56,8 @@ int main()
 	else
 		cout << "Signature is bad" << endl;
 
-    return 0;
+	
+
+
+    return 1;//返回1表示运行成功
 }

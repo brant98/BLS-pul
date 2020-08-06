@@ -21,6 +21,9 @@
     <ClInclude Include="mirdef.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="test_bls.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="miracl.lib" />
@@ -54,6 +57,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="bls.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
