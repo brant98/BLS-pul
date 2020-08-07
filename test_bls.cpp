@@ -49,7 +49,6 @@ int test_bls()
 	g1[0]=&S; g1[1]=&R;
 	g2[0]=&Q; g2[1]=&V;
 	
-
 	//只需验证公钥和消息的哈希值（曲线上两个点）与曲线生成点和签名（曲线上另两个点）是否映射到同一个数，如果是就说明这是一个有效的 BLS 签名
 	if (pfc.multi_pairing(2,g2,g1)==1)
 		cout << "Signature verifies,the message is from A!" << endl;
