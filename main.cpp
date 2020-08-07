@@ -9,7 +9,6 @@ int main()
 	{
 
 		test_bls();
-
 	}
 	finish = clock();
 	printf("Test of this algorithm finished\n");

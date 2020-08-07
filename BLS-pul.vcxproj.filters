@@ -56,10 +56,10 @@
     <ClCompile Include="zzn24.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="bls.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="test_bls.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -153,7 +153,7 @@
     <ClCompile Include="bls_pair.cpp" />
     <ClCompile Include="ecn.cpp" />
     <ClCompile Include="ecn4.cpp" />
-    <ClCompile Include="bls.cpp" />
+    <ClCompile Include="test_bls.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="zzn.cpp" />
     <ClCompile Include="zzn2.cpp" />

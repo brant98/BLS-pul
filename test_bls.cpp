@@ -19,7 +19,6 @@ int test_bls()
 	
 // 创建G2常量
 	pfc.random(Q);
-
 	pfc.random(s);    // 私钥
 	V=pfc.mult(Q,s);  // 公钥 V
 
@@ -40,7 +39,6 @@ int test_bls()
 	}
 	pfc.hash_and_map(R,(char *)message);  //将消息进行曲线哈希至点R
 
-
 // Observe that Q is a constant
 // Interesting that this optimization doesn't work for the Tate pairing, only the Ate
 	//首先进行线性的准备工作
@@ -50,14 +48,13 @@ int test_bls()
 	G2 *g2[2];
 	g1[0]=&S; g1[1]=&R;
 	g2[0]=&Q; g2[1]=&V;
+	
+
 	//只需验证公钥和消息的哈希值（曲线上两个点）与曲线生成点和签名（曲线上另两个点）是否映射到同一个数，如果是就说明这是一个有效的 BLS 签名
 	if (pfc.multi_pairing(2,g2,g1)==1)
 		cout << "Signature verifies,the message is from A!" << endl;
 	else
 		cout << "Signature is bad" << endl;
-
 	
-
-
     return 1;//返回1表示运行成功
 }
